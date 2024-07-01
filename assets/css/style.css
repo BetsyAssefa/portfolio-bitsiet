@@ -1,8 +1,8 @@
 /* Add variables */
 :root{
-    --bg:rgb(54, 76, 116);
-    --font:#b7cad3;
-    --hover:#b8740d;
+    --bkgd:rgb(243, 212, 176);
+    --burg:#581e1e;
+    --float:#f34646;
 }
 * {
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(231, 212, 183);
+    background:linear-gradient(#918888, #313235);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* ************************************************************************ */
@@ -21,14 +21,14 @@ header {
     width:100%;
     justify-content:space-between;
     padding: 20px 20px 20px 0;
-    background-color: var(--hover);
-    color: var(--font);;
+    background:linear-gradient(#816161, #3d465f);
+    color: var(--burg);;
 }
 header h1 {
     display: inline-block;
     font-size: 48px;
-    background-color:var(--bg);
-    color: var(--font);
+    background-color:var(--bkgd);
+    color: var(--burg);
     padding:0 20px 0 60px; 
 }
 header nav {
@@ -43,7 +43,7 @@ header nav ul li {
     
 }
 header a{
-    color:var(--bg);
+    color:var(--bkgd);
     border-width:1px;
     font-weight: bold; 
     padding:20px;  
@@ -53,14 +53,14 @@ header a{
 /* Subtitle section properties */
 
 /* The profile image properties */
- #img-profile{
+ #my-profile{
     width:200px;
     height: 100%;
-    border:1px solid var(--hover);
-    border-radius: 25% 10%;
+    border:1px solid var(--float);
+    border-radius:10% / 50%;
     @media(max-width: 320px){
        
-        border-color: var(--hover);
+        border-color: var(--float);
        
     }
     @media (max-width: 599px) 
@@ -72,33 +72,34 @@ header a{
     }
  
  /* the subtitle section background and it's properties */
-#alone{
+#subtitle{
     display: flex;
     position: relative;
-    height: 200px;
+    height: 100%;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/6.jpg");
-    background-size: cover; 
+    background-size: cover;
+    background-position:50% 50%;
     @media(max-width: 320px){
         
-        border:1px solid var(--hover);
+        border:1px solid var(--float);
        
     }
   
 }
-#subtitle{
+#primary{
     display:flex;
     position: absolute;
     right:40px; bottom: 20px;
     font-size: 25px;
-    color: var(--font);
+    color: var(--burg);
     
   
     }
 /* ****************************************************** */
 /*container is the properties set for the entire main body */
-.container{
+ .box{
     display:flex;
     flex-direction: column;
     
@@ -110,12 +111,12 @@ h3{
     font-weight:bold;
 }
 .writting-style {
- background-color: var(--bg);
+ background-color: var(--bkgd);
  max-width: fit-content;
  padding:10px;
  position:absolute;
  bottom:2rem ;
- color: var(--font);
+ color: var(--burg);
 
 }
 /* The properties for the 3 section in the main body(about me,work, & contact me.) on the main body */
@@ -127,7 +128,7 @@ h3{
     padding-left:2rem;
     padding-right: 2rem;
     margin-bottom: 20px;
-    color:var(--bg);
+    color:var(--bkgd);
   
     @media (max-width: 768px) {
         display:flex;
@@ -151,12 +152,12 @@ h3{
     font-weight: bold;
     text-align: end;
     padding: 15px;  
-    
+    color:var(--burg)
  }
 .headers{
    
     min-width:220px ;
-    border-right: 1px solid var(--bg);
+    border-right: 1px solid var(--bkgd);
     border-width: 3px;  
     
     @media(max-width: 768px) {
@@ -190,9 +191,9 @@ h3{
     background-repeat: no-repeat;
     background-position: 20% 30%; 
 
-    outline: 3px solid var(--bg);
+    outline: 3px solid var(--bkgd);
     outline-offset: -3px;
-    border-radius: 30px;
+    border-radius: 10px 100px / 120px;
     transition: all .5s ease-in-out;
       
 }
@@ -204,6 +205,7 @@ h3{
     position:relative;/* set the position relative because the writing-style properties of h3 is in a position absolute,so that it be placed in a correct position.*/
     background-image: url("../images/1.jpg"); 
     margin: 15px ;
+ 
 
     @media (max-width: 768px) {
         flex: none;
@@ -281,6 +283,7 @@ h3{
     height: 20rem;
     background-image: url("../images/5.jpg");
     margin: 15px ;
+    background-position: 40% 50%; 
     @media (max-width: 768px) {
         flex: none;
     }
@@ -309,7 +312,7 @@ h3{
    
 }
 .bottom  a{
-    color:var(--bg);
+    color:var(--bkgd);
     font-weight: bold;
     font-size: 20px; 
     padding: 20px; 
@@ -317,23 +320,23 @@ h3{
 /* ******************************************************************************** */
 /* Psudo class and Psudo element will be added*/
 a:hover{
-    color:var(--font);
+    color:var(--burg);
 }
 
 #surf:hover {
-    box-shadow: inset 0 0 80px var(--hover);
+    box-shadow: inset 0 0 80px var(--float);
 }
 #LED:hover {
-    box-shadow: inset 0 0 80px  var(--hover);
+    box-shadow: inset 0 0 80px  var(--float);
 }
 #Calculator:hover {
-    box-shadow: inset 0 0 80px  var(--hover);
+    box-shadow: inset 0 0 80px  var(--float);
 }
 #Puzzels:hover {
-    box-shadow: inset 0 0 80px  var(--hover);
+    box-shadow: inset 0 0 80px  var(--float);
 }
 #Run:hover {
-    box-shadow: inset 0 0 80px  var(--hover);
+    box-shadow: inset 0 0 80px  var(--float);
 }
 
 /* ****************Media query properties *****************************************/
@@ -341,44 +344,45 @@ a:hover{
 @media screen and (max-width: 768px) {
     body {
      
-        background-color: var(--font);
+        background-color: var(--burg);
     }
     /* *******header properties start here */
     header{
         display:flex;
         flex-direction: column; 
         align-items: center;
-        background-color: var(--font);
+        background-color: var(--burg);
     
     }
     header h1{
         padding:10px;
         font-size: 30px;
     }
-    .b {
+    .awc {
         text-align: center;
         font-size: 15px;
     }
    
  /* **********************end of header media query*********** */
 
-#img-profile{
+#my-profile{
         width:150px;
         height:150px; 
     }
-#subtitle{
+#primary{
     display:flex;
     flex-direction: row;
     position:absolute;
-    bottom: 10px; left: 130px;
+    bottom : 5px; left:9rem;
     font-size: 15px;
     width: 100%;
   }
   /* to make the profile image center */
-#alone{
+#subtitle{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: left; */
 }
 /* ********end of subtitle header********* */
 /* ****main section part of body */
@@ -386,7 +390,7 @@ a:hover{
   .about-me-work h2{
     text-align: center;
     font-size: 30px;
-    border-bottom: 1px solid var(--bg);
+    border-bottom: 1px solid var(--bkgd);
     padding: 10px;
 }
 .headers{
@@ -398,7 +402,7 @@ a:hover{
     text-align:center;
     line-height:2;
     padding-left:30px;
-    color: var(--bg);
+    color: var(--bkgd);
     font-weight: bold; 
     font-size:10px;
 }
