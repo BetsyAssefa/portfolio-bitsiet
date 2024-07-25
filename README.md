@@ -26,6 +26,10 @@ N/A
 
 ##Usage
 
+Open the deployed URL in the web browser.
+
+"https://betsyassefa.github.io/portfolio-bitsiet/"
+
 ![image](https://github.com/user-attachments/assets/5f68a5c4-1494-413a-a2c9-2ff49941061d)
 
 "The completed webpage should adhere to the formatting and structure outlined above.
