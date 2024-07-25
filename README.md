@@ -35,10 +35,10 @@ Open the deployed URL in the web browser.
 
 The completed webpage should adhere to the formatting and structure outlined above.
 
-Acknowledgements
+##Credit
 
 I extend my appreciation to my SSA, instructor, TA, and classmates for their invaluable assistance."
 
---License
+##License
 
 MIT LICENSE
