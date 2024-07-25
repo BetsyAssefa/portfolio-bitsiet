@@ -34,3 +34,6 @@ Acknowledgements
 
 I extend my appreciation to my SSA, instructor, TA, and classmates for their invaluable assistance."
 
+--License
+
+MIT LICENSE
