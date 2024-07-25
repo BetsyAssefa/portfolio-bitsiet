@@ -25,3 +25,12 @@ N/A
 N/A
 
 ##Usage
+
+![image](https://github.com/user-attachments/assets/5f68a5c4-1494-413a-a2c9-2ff49941061d)
+
+"The completed webpage should adhere to the formatting and structure outlined above.
+
+Acknowledgements
+
+I extend my appreciation to my SSA, instructor, TA, and classmates for their invaluable assistance."
+
